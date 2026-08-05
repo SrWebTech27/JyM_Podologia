@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="J &amp; M Podología en Miraflores: tratamientos clínicos para pies con tecnología láser, reflexología y cuidado podal personalizado.">
+    <title>J &amp; M Podología | Podología profesional en Miraflores</title>
+
+    <link rel="icon" href="Perfil.jpeg">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- PROGRESS BAR -->
+<div id="progressBar"></div>
+
+
+
+<!-- HEADER -->
+<header id="mainHeader">
+    <div class="container nav-content">
+        <a href="#" class="nav-logo">
+            <img src="Perfil.jpeg" alt="J &amp; M Podología">
+            <span>J <b>&amp;</b> M Podología</span>
+        </a>
+        <nav class="nav-links">
+            <a href="#especializaciones">Especializaciones</a>
+            <a href="#servicios">Tratamientos</a>
+            <a href="#testimonios">Testimonios</a>
+            <a href="#faq">FAQ</a>
+        </nav>
+        <a href="https://api.whatsapp.com/send/?phone=51946992556&amp;text=Hola%2C+quiero+agendar+una+cita.&amp;type=phone_number&amp;app_absent=0" target="_blank" class="btn-reservar">
+            <i class="fas fa-calendar-check"></i> Reservar Cita
+        </a>
+        <button id="menuBtn" aria-label="Menú" style="display:none; background:none; border:none; cursor:pointer; padding:6px; color:var(--ink); font-size:1.4rem;">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+</header>
+
+<!-- MOBILE MENU -->
+<div id="mobileMenu" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(255,255,255,0.98); z-index:1500; flex-direction:column; align-items:center; justify-content:center; gap:32px;">
+    <button id="menuClose" style="position:absolute; top:24px; right:24px; background:none; border:none; font-size:1.6rem; cursor:pointer; color:var(--ink);"><i class="fas fa-times"></i></button>
+    <a href="#especializaciones" class="mobile-nav-link" onclick="closeMobileMenu()">Especializaciones</a>
+    <a href="#servicios" class="mobile-nav-link" onclick="closeMobileMenu()">Tratamientos</a>
+    <a href="#testimonios" class="mobile-nav-link" onclick="closeMobileMenu()">Testimonios</a>
+    <a href="#faq" class="mobile-nav-link" onclick="closeMobileMenu()">Preguntas Frecuentes</a>
+    <a href="https://api.whatsapp.com/send/?phone=51946992556&amp;text=Hola%2C+quiero+agendar+una+cita.&amp;type=phone_number&amp;app_absent=0" target="_blank" class="btn-primary" onclick="closeMobileMenu()" style="margin-top:8px;">
+        <i class="fab fa-whatsapp"></i> Reservar Cita
+    </a>
+</div>
+
+<!-- BOTÓN MASCOTA -->
+<a href="https://api.whatsapp.com/send/?phone=51946992556&amp;text=Hola%2C+quiero+agendar+una+cita.&amp;type=phone_number&amp;app_absent=0"
+   class="chat-float"
+   target="_blank"
+   aria-label="Reservar por WhatsApp">
+    <img src="animal.png" alt="Reservar" class="chat-img">
+</a>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="container" style="display: contents;">
+        <div class="hero-text-col" style="padding-left: 28px; padding-right: 28px;">
+            <div class="hero-eyebrow">Podología profesional en Miraflores</div>
+            <h1>Tu salud podal<br>en manos de <em>expertos.</em></h1>
+            <p class="hero-desc">
+                Recupera el placer de caminar sin molestias. Tratamientos clínicos de élite, tecnología láser y reflexología en el corazón de Miraflores.
+            </p>
+            <div class="hero-actions">
+                <a href="https://api.whatsapp.com/send/?phone=51946992556&amp;text=Hola%2C+quiero+agendar+una+cita.&amp;type=phone_number&amp;app_absent=0" target="_blank" class="btn-primary">
+                    <i class="fab fa-whatsapp"></i> Agenda tu Evaluación
+                </a>
+                <a href="#servicios" class="btn-secondary">Ver Tratamientos <i class="fas fa-arrow-down"></i></a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number">5★</div>
+                    <div class="stat-label">Calificación promedio</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">8+</div>
+                    <div class="stat-label">Años de experiencia</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-img-col">
+            <div class="hero-img-frame">
+                <img src="Local.jpeg" alt="J &amp; M Podología" class="hero-main-img">
+
+                <div class="hero-badge hero-badge-1">
+                    <div class="badge-icon">⚡</div>
+                    <div class="badge-text">
+                        <strong>Tecnología Láser</strong>
+                        <span>Tratamiento sin dolor</span>
+                    </div>
+                </div>
+
+                <div class="hero-badge hero-badge-2">
+                    <div class="badge-icon">🏆</div>
+                    <div class="badge-text">
+                        <strong>+500 pacientes</strong>
+                        <span>Satisfechos en Miraflores</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- WHY US -->
+<section class="why-section" id="por-que">
+    <div class="container">
+        <div class="reveal">
+            <div class="section-label">Por qué elegirnos</div>
+            <h2 class="section-title">La diferencia que <em>sentirás</em></h2>
+            <p style="color: var(--muted); max-width: 520px; font-size: 1rem; line-height: 1.7;">Cada detalle de nuestra clínica está pensado para brindarte la experiencia más segura y efectiva.</p>
+        </div>
+        <div class="why-grid">
+            <div class="why-card reveal reveal-delay-1">
+                <span class="why-icon">🔬</span>
+                <h3>Tecnología de Vanguardia</h3>
+                <p>Equipos láser y herramientas clínicas certificadas para resultados rápidos y seguros.</p>
+            </div>
+            <div class="why-card reveal reveal-delay-2">
+                <span class="why-icon">🧼</span>
+                <h3>Esterilización Total</h3>
+                <p>Protocolos de higiene rigurosos en cada sesión. Tu seguridad es nuestra máxima prioridad.</p>
+            </div>
+            <div class="why-card reveal reveal-delay-3">
+                <span class="why-icon">👩‍⚕️</span>
+                <h3>Especialistas Certificados</h3>
+                <p>Profesionales con formación clínica avanzada y años de experiencia en podología.</p>
+            </div>
+            <div class="why-card reveal reveal-delay-3">
+                <span class="why-icon">💬</span>
+                <h3>Atención Personalizada</h3>
+                <p>Tratamientos diseñados específicamente para las necesidades de cada paciente.</p>
+            </div>
+            <div class="why-card reveal reveal-delay-3">
+                <span class="why-icon">🎓</span>
+                <h3>Certificaciones oficiales</h3>
+                <p>Profesionales certificados y formación continua en podología clínica y estética podal.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SPECIALTIES -->
+<section class="specialties-section" id="especializaciones">
+    <div class="container">
+        <div class="specialties-heading reveal">
+            <div>
+                <div class="section-label">Cuidado para cada etapa y necesidad</div>
+                <h2 class="section-title">Nuestras <em>especializaciones</em></h2>
+            </div>
+            <p>Atención podológica personalizada para acompañarte con seguridad, experiencia y cercanía.</p>
+        </div>
+        <div class="specialties-grid">
+            <article class="specialty-card reveal reveal-delay-1">
+                <span class="specialty-icon"><i class="fas fa-person-cane"></i></span>
+                <h3>Podología Geriátrica</h3>
+                <p>Cuidado especializado y delicado para mantener la salud y comodidad de los pies en adultos mayores.</p>
+            </article>
+            <article class="specialty-card reveal reveal-delay-2">
+                <span class="specialty-icon"><i class="fas fa-running"></i></span>
+                <h3>Podología Deportiva</h3>
+                <p>Atención enfocada en las necesidades del pie activo, para que sigas avanzando con confianza.</p>
+            </article>
+            <article class="specialty-card reveal reveal-delay-3">
+                <span class="specialty-icon"><i class="fas fa-child-reaching"></i></span>
+                <h3>Podología Pediátrica</h3>
+                <p>Evaluación y acompañamiento podológico pensado para el bienestar de los más pequeños.</p>
+            </article>
+            <article class="specialty-card reveal reveal-delay-3">
+                <span class="specialty-icon"><i class="fas fa-hand-sparkles"></i></span>
+                <h3>Dermatología, Callosidades y Helomas</h3>
+                <p>Valoración y cuidado profesional de alteraciones cutáneas, callosidades y helomas.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES / CATALOG -->
+<section id="servicios" class="services-section">
+    <div class="container">
+        <div class="services-header reveal">
+            <div>
+                <div class="section-label">Nuestros tratamientos</div>
+                <h2 class="section-title">Catálogo de <em>Servicios</em></h2>
+            </div>
+            <a href="https://api.whatsapp.com/send/?phone=51946992556&amp;text=Hola%2C+quiero+agendar+una+cita.&amp;type=phone_number&amp;app_absent=0" target="_blank" class="btn-primary" style="white-space: nowrap;">
+                Consultar Precios
+            </a>
+        </div>
+
+        <!-- FILTERS -->
+        <div class="cat-filters reveal">
+            <button class="cat-filter-btn active" data-filter="all">Todos</button>
+            <button class="cat-filter-btn" data-filter="laser">Láser</button>
+            <button class="cat-filter-btn" data-filter="clinico">Clínico</button>
+            <button class="cat-filter-btn" data-filter="estetica">Estética</button>
+            <button class="cat-filter-btn" data-filter="reflexo">Reflexología</button>
+        </div>
+
+        <div class="services-grid" id="catalogGrid">
+
+            <!-- LÁSER -->
+            <div class="service-card reveal" data-cat="laser">
+                <div class="service-media">
+                    <video autoplay muted loop playsinline>
+                        <source src="Lazer .mp4" type="video/mp4">
+                    </video>
+                    <span class="service-cat-badge badge-laser">Láser</span>
+                </div>
+                <div class="service-body">
+                    <h3>Tecnología Láser</h3>
+                    <p>Tratamiento indoloro de última generación para onicomicosis (hongos) y verrugas plantares. Resultados visibles desde la primera sesión sin tiempo de recuperación.</p>
+                    <div class="service-footer">
+                        <span class="service-meta">Evaluación previa</span>
+                        <a href="https://api.whatsapp.com/send/?phone=51946992556&amp;text=Hola%2C+quiero+agendar+una+cita.&amp;type=phone_number&amp;app_absent=0" target="_blank" class="service-cta">
+                            <i class="fab fa-whatsapp"></i> Consultar
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- UÑERO -->
+            <div class="service-card reveal reveal-delay-1" data-cat="clinico">
+                <div class="service-media">
+                    <img src="Uñero.jpeg" alt="Curación de Uñeros" style="object-position: center 40%;">
+                    <span class="service-cat-badge badge-clinico">Clínico</span>
+                </div>
+                <div class="service-body">
+                    <h3>Curación de Uñeros</h3>
+                    <p>Alivio inmediato aplicando técnicas clínicas especializadas. Atendemos urgencias con cita el mismo día en nuestro consultorio de Miraflores.</p>
+                    <div class="service-footer">
+                        <span class="service-meta">Atención urgente</span>
+                        <a href="https://api.whatsapp.com/send/?phone=51946992556&amp;text=Hola%2C+quiero+agendar+una+cita.&amp;type=phone_number&amp;app_absent=0" target="_blank" class="service-cta">
+                            <i class="fab fa-whatsapp"></i> Agendar
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MATRICECTOMÍA -->
+            <div class="service-card reveal reveal-delay-2" data-cat="clinico">
+                <div class="service-media">
+                    <img src="Matricectomia.jpeg" alt="Matricectomía" style="object-position: center 35%;">
+                    <span class="service-cat-badge badge-clinico">Clínico</span>
+                </div>
+                <div class="service-body">
+                    <h3>Matricectomía</h3>
+                    <p>Cirugía menor ambulatoria para corregir definitivamente el crecimiento anormal de la uña. Solución permanente con anestesia local y recuperación rápida.</p>
+                    <div class="service-footer">
+                        <span class="service-meta">Proceso quirúrgico</span>
+                        <a href="https://api.whatsapp.com/send/?phone=51946992556&amp;text=Hola%2C+quiero+agendar+una+cita.&amp;type=phone_number&amp;app_absent=0" target="_blank" class="service-cta">
+                            <i class="fab fa-whatsapp"></i> Consultar
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ACRÍLICO MEDICADO -->
+            <div class="service-card reveal" data-cat="estetica">
+                <div class="service-media">
+                    <video autoplay muted loop playsinline>
+                        <source src="acrilico medicado.mp4" type="video/mp4">
+                    </video>
+                    <span class="service-cat-badge badge-estetica">Estética</span>
+                </div>
+                <div class="service-body">
+                    <h3>Acrílico Medicado</h3>
+                    <p>Reconstrucción estética que protege la lámina ungueal mientras se recupera tu uña natural. Resultado visualmente impecable desde el primer día.</p>
+                    <div class="service-footer">
+                        <span class="service-meta">Estética podológica</span>
+                        <a href="https://api.whatsapp.com/send/?phone=51946992556&amp;text=Hola%2C+quiero+agendar+una+cita.&amp;type=phone_number&amp;app_absent=0" target="_blank" class="service-cta">
+                            <i class="fab fa-whatsapp"></i> Solicitar
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- REFLEXOLOGÍA -->
+            <div class="service-card reveal reveal-delay-1" data-cat="reflexo">
+                <div class="service-media">
+                    <img src="Reflexología .jpeg" alt="Reflexología Podal" style="object-position: center 25%;">
+                    <span class="service-cat-badge badge-reflexo">Reflexología</span>
+                </div>
+                <div class="service-body">
+                    <h3>Reflexología Podal</h3>
+                    <p>Terapia de puntos de presión en los pies para estimular órganos y sistemas del cuerpo. Equilibrio, relajación profunda y bienestar integral en una sesión.</p>
+                    <div class="service-footer">
+                        <span class="service-meta">Sesión 60 min</span>
+                        <a href="https://api.whatsapp.com/send/?phone=51946992556&amp;text=Hola%2C+quiero+agendar+una+cita.&amp;type=phone_number&amp;app_absent=0" target="_blank" class="service-cta">
+                            <i class="fab fa-whatsapp"></i> Reservar
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PODOLOGÍA CLÍNICA -->
+            <div class="service-card reveal reveal-delay-2" data-cat="clinico">
+                <div class="service-media">
+                    <img src="Podologia .jpeg" alt="Podología Clínica" style="object-position: center 30%;">
+                    <span class="service-cat-badge badge-clinico">Clínico</span>
+                </div>
+                <div class="service-body">
+                    <h3>Podología Clínica</h3>
+                    <p>Diagnóstico y tratamiento integral de patologías del pie. Atención personalizada con productos especializados y los más altos estándares clínicos.</p>
+                    <div class="service-footer">
+                        <span class="service-meta">Consulta personalizada</span>
+                        <a href="https://api.whatsapp.com/send/?phone=51946992556&amp;text=Hola%2C+quiero+agendar+una+cita.&amp;type=phone_number&amp;app_absent=0" target="_blank" class="service-cta">
+                            <i class="fab fa-whatsapp"></i> Consultar
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCTOS ESPECIALIZADOS -->
+            <div class="service-card reveal" data-cat="estetica">
+                <div class="service-media">
+                    <img src="Productos Especializados.jpeg" alt="Productos Especializados" style="object-position: center center;">
+                    <span class="service-cat-badge badge-estetica">Estética</span>
+                </div>
+                <div class="service-body">
+                    <h3>Productos Especializados</h3>
+                    <p>Línea premium seleccionada por nuestros especialistas para el cuidado diario de tus pies en casa. Resultados clínicos garantizados.</p>
+                    <div class="service-footer">
+                        <span class="service-meta">Venta en consulta</span>
+                        <a href="https://api.whatsapp.com/send/?phone=51946992556&amp;text=Hola%2C+quiero+agendar+una+cita.&amp;type=phone_number&amp;app_absent=0" target="_blank" class="service-cta">
+                            <i class="fab fa-whatsapp"></i> Consultar
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SEGUIMIENTO UÑERO -->
+            <div class="service-card reveal reveal-delay-1" data-cat="clinico">
+                <div class="service-media">
+                    <img src="uñero 2.jpeg" alt="Seguimiento post-tratamiento" style="object-position: center 80%;">
+                    <span class="service-cat-badge badge-clinico">Clínico</span>
+                </div>
+                <div class="service-body">
+                    <h3>Seguimiento Post-Tratamiento</h3>
+                    <p>Monitoreamos tu recuperación para asegurar resultados duraderos. Control y seguimiento después de la curación de uñero.</p>
+                    <div class="service-footer">
+                        <span class="service-meta">Control incluido</span>
+                        <a href="https://api.whatsapp.com/send/?phone=51946992556&amp;text=Hola%2C+quiero+agendar+una+cita.&amp;type=phone_number&amp;app_absent=0" target="_blank" class="service-cta">
+                            <i class="fab fa-whatsapp"></i> Agendar
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RESULTADO ACRÍLICO -->
+            <div class="service-card reveal reveal-delay-2" data-cat="estetica">
+                <div class="service-media" style="height: 360px; background: #f5f3ee;">
+                    <img src="acrilicomedicado .jpeg" alt="Resultado Acrílico Medicado" style="object-fit: contain; object-position: center center; width: 100%; height: 100%;">
+                    <span class="service-cat-badge badge-estetica">Estética</span>
+                </div>
+                <div class="service-body">
+                    <h3>Resultado Acrílico Medicado</h3>
+                    <p>Uña completamente reconstruida, estética y protegida. Así luce el resultado final de nuestro tratamiento de acrílico medicado.</p>
+                    <div class="service-footer">
+                        <span class="service-meta">Resultado garantizado</span>
+                        <a href="https://api.whatsapp.com/send/?phone=51946992556&amp;text=Hola%2C+quiero+agendar+una+cita.&amp;type=phone_number&amp;app_absent=0" target="_blank" class="service-cta">
+                            <i class="fab fa-whatsapp"></i> Solicitar
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="catalog-empty" id="catalogEmpty">No hay servicios en esta categoría.</div>
+        </div>
+    </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonios" class="testimonials-section">
+    <div class="container">
+        <div class="reveal" style="text-align: center; margin-bottom: 10px;">
+            <div class="section-label" style="justify-content: center;">Atención que marca la diferencia</div>
+            <h2 class="section-title">Tu bienestar, nuestra <em>prioridad</em></h2>
+        </div>
+        <div class="reviews-overview reveal reveal-delay-1" id="googleReviewsSummary">
+            <span class="reviews-badge"><i class="fas fa-heart"></i> Atención personalizada</span>
+            <span>Cuidado clínico con calidez y profesionalismo.</span>
+        </div>
+        <div class="testimonials-scroll" id="googleReviewsGrid">
+            <div class="review-loader">Próximamente compartiremos testimonios verificados.</div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="faq-section">
+    <div class="container">
+        <div class="reveal">
+            <div class="section-label">Resolvemos tus dudas</div>
+            <h2 class="section-title">Preguntas <em>frecuentes</em></h2>
+        </div>
+        <div class="faq-grid">
+            <div class="faq-image">
+                <img src="preguntas.JPEG" alt="Preguntas Frecuentes J &amp; M Podología">
+            </div>
+            <div class="faq-list reveal reveal-delay-2">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        ¿El tratamiento para uñeros duele?
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </button>
+                    <div class="faq-answer">Utilizamos técnicas modernas y, cuando el caso lo requiere, anestesia local para que el procedimiento sea lo más indoloro posible. Tu confort es nuestra prioridad.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        ¿Cuántas sesiones láser necesito?
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </button>
+                    <div class="faq-answer">Varía según el grado de infección de cada paciente. Generalmente se recomiendan entre 4 y 8 sesiones. Realizamos una evaluación inicial para darte un plan exacto y personalizado.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        ¿Necesito cita previa?
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </button>
+                    <div class="faq-answer">Sí, para garantizar atención puntual y un ambiente esterilizado entre pacientes. Puedes agendar fácilmente por WhatsApp en minutos.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        ¿Aceptan seguros médicos?
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </button>
+                    <div class="faq-answer">Actualmente trabajamos con pagos directos. Contáctanos por WhatsApp para consultar nuestros planes y formas de pago disponibles.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        ¿Cuál es la dirección exacta?
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </button>
+                    <div class="faq-answer">Estamos en Calle Porta #170, Miraflores, Lima. Lunes a Sábado de 9 AM a 8 PM. Escríbenos por WhatsApp y te enviamos la ubicación exacta.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta-section">
+    <div class="container">
+        <div class="cta-inner reveal">
+            <div class="section-label">Tu salud es prioridad</div>
+            <h2>¿Listo para el cuidado<br>que <em style="color: var(--gold);">mereces?</em></h2>
+            <p>Visítanos en Miraflores y experimenta la diferencia de una atención personalizada y de élite.</p>
+            <div class="cta-actions">
+                <a href="https://api.whatsapp.com/send/?phone=51946992556&amp;text=Hola%2C+quiero+agendar+una+cita.&amp;type=phone_number&amp;app_absent=0" target="_blank" class="btn-white">
+                    <i class="fab fa-whatsapp" style="color: #25d366;"></i> Agendar Cita por WhatsApp
+                </a>
+                <a href="tel:+51946992556" class="btn-outline-white">
+                    <i class="fas fa-phone"></i> Llamar Ahora
+                </a>
+            </div>
+            <div class="info-cards">
+                <a class="info-card" href="https://www.google.com/maps/place/Podolog%C3%ADa+-+J+%26+M+PODOLOG%C3%8DA/@-12.1237285,-77.0314843,3a,75y,308.59h,90.35t/data=!3m7!1e1!3m5!1sVP0njv9ydZM_E-KeMmrtpQ!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D-0.3493324041931629%26panoid%3DVP0njv9ydZM_E-KeMmrtpQ%26yaw%3D308.5857005285619!7i16384!8i8192!4m6!3m5!1s0x9105c9a7c33359bd:0x94a6f72c1e09b83b!8m2!3d-12.1236623!4d-77.0316396!16s%2Fg%2F11xp8wv9p_?entry=tts&amp;g_ep=EgoyMDI2MDEyOC4wIPu8ASoASAFQAw%3D%3D&amp;skid=f03532d3-aa1b-4af9-a8f3-554d8ea6d309" target="_blank" aria-label="Ver ubicación de J &amp; M Podología en Google Maps">
+                    <div class="info-card-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div>
+                        <strong>Calle Porta #170</strong>
+                        <span>Miraflores, Lima</span>
+                    </div>
+                </a>
+                <div class="info-card">
+                    <div class="info-card-icon"><i class="fas fa-clock"></i></div>
+                    <div>
+                        <strong>Lun – Sáb: 9 AM – 8 PM</strong>
+                        <span>Citas disponibles</span>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <div class="info-card-icon"><i class="fas fa-phone"></i></div>
+                    <div>
+                        <strong>+51 946 992 556</strong>
+                        <span>WhatsApp disponible</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <img src="Perfil.jpeg" alt="J &amp; M Podología">
+                <p>Expertos en Podología Clínica, Tratamiento Láser y Reflexología en el corazón de Miraflores, Lima.</p>
+                <div class="social-links">
+                    <a href="https://www.tiktok.com/@jym.podologia" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.instagram.com/jym.podologia.reflexologia/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/JyM.podologia.reflexologia" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://api.whatsapp.com/send/?phone=51946992556&amp;text=Hola%2C+quiero+agendar+una+cita.&amp;type=phone_number&amp;app_absent=0" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Servicios</h4>
+                <a href="#servicios">Tecnología Láser</a>
+                <a href="#servicios">Curación de Uñeros</a>
+                <a href="#servicios">Matricectomía</a>
+                <a href="#servicios">Acrílico Medicado</a>
+                <a href="#servicios">Reflexología</a>
+                <a href="#servicios">Podología Clínica</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <a href="https://api.whatsapp.com/send/?phone=51946992556&amp;text=Hola%2C+quiero+agendar+una+cita.&amp;type=phone_number&amp;app_absent=0" target="_blank">WhatsApp</a>
+                <a href="https://www.instagram.com/jym.podologia.reflexologia/" target="_blank">Instagram</a>
+                <a href="https://www.tiktok.com/@jym.podologia" target="_blank">TikTok</a>
+                <a href="https://www.facebook.com/JyM.podologia.reflexologia" target="_blank">Facebook</a>
+                <a href="https://www.google.com/maps/place/Podolog%C3%ADa+-+J+%26+M+PODOLOG%C3%8DA/@-12.1237285,-77.0314843,3a,75y,308.59h,90.35t/data=!3m7!1e1!3m5!1sVP0njv9ydZM_E-KeMmrtpQ!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D-0.3493324041931629%26panoid%3DVP0njv9ydZM_E-KeMmrtpQ%26yaw%3D308.5857005285619!7i16384!8i8192!4m6!3m5!1s0x9105c9a7c33359bd:0x94a6f72c1e09b83b!8m2!3d-12.1236623!4d-77.0316396!16s%2Fg%2F11xp8wv9p_?entry=tts&amp;g_ep=EgoyMDI2MDEyOC4wIPu8ASoASAFQAw%3D%3D&amp;skid=f03532d3-aa1b-4af9-a8f3-554d8ea6d309" target="_blank">Ubicación en Google Maps</a>
+                <a href="#faq">Preguntas Frecuentes</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 J &amp; M Podología · Todos los derechos reservados · Diseñado por <a href="https://linktr.ee/SrWebTech" target="_blank">SrWebTech</a></p>
+        </div>
+    </div>
+</footer>
+
+<script src="scripts.js" defer></script>
+</body>
+</html>
