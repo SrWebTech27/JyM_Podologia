@@ -1,10 +1,10 @@
 {
   "HTML-001": {
-    "occurrences": 124,
+    "occurrences": 129,
     "confidence": 1,
     "mastered_explicitly": false,
     "first_seen": "2026-07-03T02:21:09.260Z",
-    "last_seen": "2026-08-15T19:41:08.998Z"
+    "last_seen": "2026-08-17T03:38:53.358Z"
   },
   "SEC-004": {
     "occurrences": 64,
