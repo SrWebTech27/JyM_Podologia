@@ -333,10 +333,12 @@ footer { padding: 61px 0 21px; color: white; background: #0a1011; }
     .specialties-grid { grid-template-columns: 1fr; margin-top: 31px; }
     .specialty-card { min-height: 0; padding: 24px; }
     .specialty-icon { margin-bottom: 24px; }
+    .delivery-grid { grid-template-columns: 1fr; }
     .services-header { align-items: start; flex-direction: column; }
     .services-header .btn-primary { width: 100%; }
     .services-grid, .testimonials-scroll, .faq-grid, .footer-grid, .info-cards { grid-template-columns: 1fr; }
     .service-media { height: 245px; }
+    .video-frame video { min-height: 0; height: min(420px, 120vw); object-fit: contain; }
     .faq-image { position: static; height: 280px; }
     .cta-section { padding: 68px 0; }
     .info-cards { gap: 1px; margin-top: 42px; }
