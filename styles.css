@@ -180,6 +180,18 @@ h1 em, h2 em { color: var(--teal); font-weight: 600; }
 .catalog-empty { display: none; grid-column: 1 / -1; padding: 38px; color: var(--muted); text-align: center; border: 1px dashed var(--line); }
 .service-card.is-hidden { display: none; }
 
+.delivery-section { background: linear-gradient(180deg, #ffffff 0%, #effaf9 100%); }
+.delivery-grid { display: grid; grid-template-columns: .98fr 1.02fr; align-items: center; gap: 44px; }
+.delivery-copy p { color: var(--muted); font-size: 1rem; line-height: 1.8; margin-bottom: 20px; }
+.delivery-points { list-style: none; padding: 0; margin: 0 0 28px; display: grid; gap: 13px; color: var(--ink); font-size: .92rem; font-weight: 600; }
+.delivery-points li { display: flex; align-items: center; gap: 10px; }
+.delivery-points i { display: grid; place-items: center; width: 22px; height: 22px; color: white; background: var(--teal); border-radius: 50%; font-size: .68rem; }
+.delivery-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.delivery-media { display: flex; justify-content: center; }
+.video-frame { position: relative; width: min(100%, 560px); padding: 12px; background: linear-gradient(135deg, rgba(0,174,181,.1), rgba(0,174,181,.04)); border: 1px solid var(--line); box-shadow: var(--shadow); }
+.video-frame::before { content: ''; position: absolute; inset: 20px -18px -18px 20px; background: rgba(0, 174, 181, .12); z-index: 0; }
+.video-frame video { position: relative; z-index: 1; width: 100%; min-height: 400px; object-fit: cover; background: #0f1f22; }
+
 .testimonials-section { background: var(--ink); color: white; }
 .testimonials-section .section-label { color: #8fe9ec; justify-content: center; }
 .testimonials-section .section-label::before { background: #8fe9ec; }

@@ -1,10 +1,10 @@
 {
   "HTML-001": {
-    "occurrences": 244,
+    "occurrences": 255,
     "confidence": 1,
     "mastered_explicitly": false,
     "first_seen": "2026-07-03T02:21:09.260Z",
-    "last_seen": "2026-08-30T20:23:19.528Z"
+    "last_seen": "2026-09-02T02:33:59.802Z"
   },
   "SEC-004": {
     "occurrences": 64,
@@ -35,17 +35,17 @@
     "last_seen": "2026-08-26T20:35:25.974Z"
   },
   "CSS-001": {
-    "occurrences": 8,
+    "occurrences": 16,
     "confidence": 1,
     "mastered_explicitly": false,
     "first_seen": "2026-08-21T01:48:37.758Z",
-    "last_seen": "2026-08-21T01:48:37.779Z"
+    "last_seen": "2026-09-02T02:04:36.163Z"
   },
   "CSS-003": {
-    "occurrences": 2,
+    "occurrences": 4,
     "confidence": 1,
     "mastered_explicitly": false,
     "first_seen": "2026-08-21T01:48:37.783Z",
-    "last_seen": "2026-08-21T01:48:37.784Z"
+    "last_seen": "2026-09-02T02:04:36.170Z"
   }
 }
